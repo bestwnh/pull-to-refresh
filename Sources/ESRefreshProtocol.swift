@@ -66,7 +66,7 @@ public protocol ESRefreshProtocol {
 public protocol ESRefreshAnimatorProtocol {
     
     // The view that called when component refresh, returns a custom view or self if 'self' is the customized views.
-    var view: UIView {get}
+    @MainActor var view: UIView {get}
     
     // Customized inset.
     var insets: UIEdgeInsets {set get}
